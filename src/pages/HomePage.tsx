@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { ArrowRight, Bot, Code, Sparkles, Target, Trophy, Users } from 'lucide-react';
+import { ArrowRight, Bot, BookOpen, Code, Sparkles, Target, Trophy, Users } from 'lucide-react';
 
 export default function HomePage() {
   return (
