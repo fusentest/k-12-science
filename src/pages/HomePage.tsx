@@ -55,9 +55,7 @@ export default function HomePage() {
               <Link
                 to="/dashboard"
                 className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity"
-              >
-                Start Learning
-                <ArrowRight className="w-4 h-4" />
+              >Start Learning now<ArrowRight className="w-4 h-4" />
               </Link>
               
               <Link
