@@ -1,10 +1,27 @@
 
 import { Link } from 'react-router-dom';
-import { ArrowRight, Bot, BookOpen, Code, Sparkles, Target, Trophy, Users } from 'lucide-react';
+import { ArrowRight, Bot, BookOpen, Code, Sparkles, Target, Trophy, Users, LogIn } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-background">
+      {/* Navigation */}
+      <nav className="relative z-10 border-b border-border/50 bg-background/80 backdrop-blur-sm">
+        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <Bot className="w-8 h-8 text-primary" />
+            <span className="text-xl font-bold text-foreground">AI CS Academy</span>
+          </div>
+          <Button asChild variant="outline">
+            <Link to="/signin">
+              <LogIn className="w-4 h-4" />
+              Sign In
+            </Link>
+          </Button>
+        </div>
+      </nav>
+
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 gradient-hero" />
